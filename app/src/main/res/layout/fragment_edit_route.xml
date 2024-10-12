@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.admin.routes.AddRouteFragment">
+
+    <!-- res/layout/fragment_create_route.xml -->
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/routeNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nazwa"
+            android:inputType="text"/>
+
+        <Button
+            android:id="@+id/selectLocationsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wybierz lokacje"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/submitEditRouteButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edytuj">
+            </Button>
+
+            <Button
+                android:id="@+id/popBackButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anuluj"
+                android:layout_marginLeft="10dp">
+            </Button>
+
+            <Button
+                android:id="@+id/deleteRouteButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Usuń"
+                android:layout_marginLeft="10dp">
+            </Button>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

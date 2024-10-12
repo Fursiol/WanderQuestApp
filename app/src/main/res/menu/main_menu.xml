@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_main_view"
+            android:title="Strona główna"/>
+
+        <item
+            android:id="@+id/nav_city_events"
+            android:title="Wydarzenia w mieście"/>
+
+        <item
+            android:id="@+id/nav_check_weather"
+            android:title="Pogoda"/>
+
+        <item
+            android:id="@+id/nav_admin_dashboard"
+            android:title="Panel admin"/>
+
+        <item
+            android:id="@+id/nav_log_out"
+            android:title="Wyloguj się"/>
+    </group>
+</menu>

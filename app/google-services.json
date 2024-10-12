@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "624731434917",
+    "project_id": "wanderquest-9123b",
+    "storage_bucket": "wanderquest-9123b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:624731434917:android:c8376b992e008f0ab0024c",
+        "android_client_info": {
+          "package_name": "com.example.wanderquest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDO7Na01Q6bkvi6KCFp4rxfibSLfJ4gJi0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

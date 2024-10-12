@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.admin.quests.EditQuestFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingTop="30dp">
+
+        <Spinner
+            android:id="@+id/locationSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/questQuestionInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_large"
+            android:hint="Treść pytania"
+            app:boxCornerRadiusBottomEnd="@dimen/dp_15"
+            app:boxCornerRadiusBottomStart="@dimen/dp_15"
+            app:boxCornerRadiusTopEnd="@dimen/dp_15"
+            app:boxCornerRadiusTopStart="@dimen/dp_15"
+            app:hintTextColor="@color/red_a30">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/questQuestionInputEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/questCorrectAnswerInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_large"
+            android:hint="Poprawna odpowiedź"
+            app:boxCornerRadiusBottomEnd="@dimen/dp_15"
+            app:boxCornerRadiusBottomStart="@dimen/dp_15"
+            app:boxCornerRadiusTopEnd="@dimen/dp_15"
+            app:boxCornerRadiusTopStart="@dimen/dp_15"
+            app:hintTextColor="@color/red_a30">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/questCorrectAnswerInputEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/questAnswer1Inputlayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_large"
+            android:hint="Odpowiedź 1"
+            app:boxCornerRadiusBottomEnd="@dimen/dp_15"
+            app:boxCornerRadiusBottomStart="@dimen/dp_15"
+            app:boxCornerRadiusTopEnd="@dimen/dp_15"
+            app:boxCornerRadiusTopStart="@dimen/dp_15"
+            app:hintTextColor="@color/red_a30">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/questAnswer1InputEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/questAnswer2Inputlayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_large"
+            android:hint="Odpowiedź 2"
+            app:boxCornerRadiusBottomEnd="@dimen/dp_15"
+            app:boxCornerRadiusBottomStart="@dimen/dp_15"
+            app:boxCornerRadiusTopEnd="@dimen/dp_15"
+            app:boxCornerRadiusTopStart="@dimen/dp_15"
+            app:hintTextColor="@color/red_a30">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/questAnswer2InputEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/questAnswer3Inputlayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_large"
+            android:hint="Odpowiedź 3"
+            app:boxCornerRadiusBottomEnd="@dimen/dp_15"
+            app:boxCornerRadiusBottomStart="@dimen/dp_15"
+            app:boxCornerRadiusTopEnd="@dimen/dp_15"
+            app:boxCornerRadiusTopStart="@dimen/dp_15"
+            app:hintTextColor="@color/red_a30">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/questAnswer3InputEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/submitEditQuestButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edytuj"
+                android:layout_marginRight="10dp">
+            </Button>
+            <Button
+                android:id="@+id/popBackButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anuluj"
+                >
+            </Button>
+            <Button
+                android:id="@+id/deleteQuestButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Usuń"
+                android:layout_marginLeft="10dp">
+            </Button>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

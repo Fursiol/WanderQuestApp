@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_main"
+    app:startDestination="@id/loginFragment">
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.wanderquest.view.auth.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.wanderquest.view.auth.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cityEventsFragment"
+        android:name="com.example.wanderquest.view.home.CityEventsFragment"
+        android:label="fragment_city_event"
+        tools:layout="@layout/fragment_city_event" >
+        <action
+            android:id="@+id/action_cityEventsFragment_to_detailCityEventFragment"
+            app:destination="@id/detailCityEventFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/weatherFragment"
+        android:name="com.example.wanderquest.view.home.WeatherFragment"
+        android:label="fragment_weather"
+        tools:layout="@layout/fragment_weather" />
+    <fragment
+        android:id="@+id/detailCityEventFragment"
+        android:name="com.example.wanderquest.view.home.DetailsCityEventFragment"
+        android:label="fragment_details_city_event"
+        tools:layout="@layout/fragment_details_city_event" />
+    <fragment
+        android:id="@+id/adminDashboardFragment"
+        android:name="com.example.wanderquest.view.admin.AdminDashboardFragment"
+        android:label="fragment_admin_dashboard"
+        tools:layout="@layout/fragment_admin_dashboard" />
+    <fragment
+        android:id="@+id/manageLocationsFragment"
+        android:name="com.example.wanderquest.view.admin.locations.ManageLocationsFragment"
+        android:label="fragment_manage_locations"
+        tools:layout="@layout/fragment_manage_locations" />
+    <fragment
+        android:id="@+id/addLocationFragment"
+        android:name="com.example.wanderquest.view.admin.locations.AddLocationFragment"
+        android:label="fragment_add_location"
+        tools:layout="@layout/fragment_add_location" />
+    <fragment
+        android:id="@+id/manageQuestsFragment"
+        android:name="com.example.wanderquest.view.admin.quests.ManageQuestsFragment"
+        android:label="fragment_manage_quests"
+        tools:layout="@layout/fragment_manage_quests" />
+    <fragment
+        android:id="@+id/addQuestFragment"
+        android:name="com.example.wanderquest.view.admin.quests.AddQuestFragment"
+        android:label="fragment_add_quest"
+        tools:layout="@layout/fragment_add_quest" />
+    <fragment
+        android:id="@+id/manageRoutesFragment"
+        android:name="com.example.wanderquest.view.admin.routes.ManageRoutesFragment"
+        android:label="fragment_manage_routes"
+        tools:layout="@layout/fragment_manage_routes" />
+    <fragment
+        android:id="@+id/addRouteFragment"
+        android:name="com.example.wanderquest.view.admin.routes.AddRouteFragment"
+        android:label="fragment_add_route"
+        tools:layout="@layout/fragment_add_route" />
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.wanderquest.view.home.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_chooseRouteFragment"
+            app:destination="@id/chooseRouteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chooseRouteFragment"
+        android:name="com.example.wanderquest.view.home.ChooseRouteFragment"
+        android:label="fragment_choose_route"
+        tools:layout="@layout/fragment_choose_route" >
+        <action
+            android:id="@+id/action_chooseRouteFragment_to_routeGameFragment"
+            app:destination="@id/routeGameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/routeGameFragment"
+        android:name="com.example.wanderquest.view.home.RouteGameFragment"
+        android:label="fragment_route_game"
+        tools:layout="@layout/fragment_route_game" />
+    <fragment
+        android:id="@+id/editQuestFragment"
+        android:name="com.example.wanderquest.view.admin.quests.EditQuestFragment"
+        android:label="fragment_edit_quest"
+        tools:layout="@layout/fragment_edit_quest" />
+    <fragment
+        android:id="@+id/editLocationFragment"
+        android:name="com.example.wanderquest.view.admin.quests.EditLocationFragment"
+        android:label="fragment_edit_location"
+        tools:layout="@layout/fragment_edit_location" />
+    <fragment
+        android:id="@+id/editRouteFragment"
+        android:name="com.example.wanderquest.view.admin.routes.EditRouteFragment"
+        android:label="fragment_edit_route"
+        tools:layout="@layout/fragment_edit_route" />
+</navigation>
